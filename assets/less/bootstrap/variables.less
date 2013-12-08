@@ -21,7 +21,7 @@
 @brand-primary:         #428bca;
 @brand-success:         #5cb85c;
 @brand-warning:         #f0ad4e;
-@brand-danger:          #d9534f;
+@brand-danger:          #ca4842;
 @brand-info:            #5bc0de;
 
 // Scaffolding
@@ -39,7 +39,7 @@
 // Typography
 // -------------------------
 
-@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:  "Source Sans Pro", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
@@ -179,11 +179,11 @@
 @dropdown-divider-bg:            #e5e5e5;
 
 @dropdown-link-color:            @gray-dark;
-@dropdown-link-hover-color:      darken(@gray-dark, 5%);
-@dropdown-link-hover-bg:         #f5f5f5;
+@dropdown-link-hover-color:      #fff/*darken(@gray-dark, 5%)*/;
+@dropdown-link-hover-bg:         @brand-primary;
 
-@dropdown-link-active-color:     @component-active-color;
-@dropdown-link-active-bg:        @component-active-bg;
+@dropdown-link-active-color:     #fff; /*@component-active-color;*/
+@dropdown-link-active-bg:        @brand-primary;
 
 @dropdown-link-disabled-color:   @gray-light;
 
@@ -274,8 +274,8 @@
 @navbar-default-link-color:                #777;
 @navbar-default-link-hover-color:          #333;
 @navbar-default-link-hover-bg:             transparent;
-@navbar-default-link-active-color:         #555;
-@navbar-default-link-active-bg:            darken(@navbar-default-bg, 6.5%);
+@navbar-default-link-active-color:         #fff; /*#555;*/
+@navbar-default-link-active-bg:            @brand-primary; /*darken(@navbar-default-bg, 6.5%);*/
 @navbar-default-link-disabled-color:       #ccc;
 @navbar-default-link-disabled-bg:          transparent;
 

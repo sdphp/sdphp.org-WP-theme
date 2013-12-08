@@ -8,7 +8,9 @@
    Base
    ========================================================================== */
 
-body { }
+body {
+	font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+}
 
 
 
@@ -16,7 +18,57 @@ body { }
    Header
    ========================================================================== */
 
-.banner { }
+.banner {
+	border-bottom: 5px solid @brand-danger;
+	.top {
+		.clearfix;
+	}
+	.navbar-brand {
+		float: none;
+		display: block;
+		margin: 10px auto;
+		position: relative;
+		text-indent: -9999em;
+		background: url( ../img/sd-php-logo-200px.png ) center center no-repeat;
+		width: 200px;
+		height: 64px;
+		padding: 0;
+	}
+	.description {
+		text-align: center;
+		font-size: 20px;
+		font-style: italic;
+	}
+	@media ( min-width: @grid-float-breakpoint ) {
+		.navbar-brand {
+			margin: 15px 0;
+		}
+		.description {
+			margin: 30px 0 0 30px;
+			text-align: left;
+		}
+		.navbar-brand, .description {
+			float: left;
+		}
+	}
+	.navbar {
+		background: none;
+		border: none;
+		min-height: 0;
+	}
+	.navbar-toggle {
+		margin-right: 5px;
+	}
+	@media ( min-width: @screen-xs ) {
+		.navbar-toggle {
+			margin-top: -70px;
+			margin-right: 15px;
+		}
+	}
+	.widget_search {
+		margin: 28px 0 0 55%;
+	}
+}
 
 
 
@@ -43,7 +95,17 @@ body { }
    Sidebar
    ========================================================================== */
 
-.sidebar { }
+.sidebar {
+	margin-top: 40px; // Top matches .page-header
+	padding: 0 20px 20px 20px;
+	border-left: 1px solid #eee;
+	@media ( min-width: @screen-sm ) {
+		padding-right: 0;
+	}
+	.widget_search {
+		.hidden-lg
+	}
+}
 
 
 
@@ -51,11 +113,7 @@ body { }
    Posts
    ========================================================================== */
 
-.hentry header { }
-.hentry time { }
-.hentry .byline { }
-.hentry .entry-content { }
-.hentry footer { }
+.hentry {}
 
 
 
@@ -72,11 +130,28 @@ body { }
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
    ========================================================================== */
 
-.aligncenter { display: block; margin: 0 auto; }
-.alignleft { float: left; }
-.alignright { float: right; }
-figure.alignnone { margin-left: 0; margin-right: 0; }
-
+.aligncenter {
+	display: block;
+	margin: 0 auto;
+}
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+figure.alignnone {
+	margin-left: 0;
+	margin-right: 0;
+}
+img {
+	&.alignleft {
+		margin: 7px 20px 20px 0;
+	}
+	&.alignright {
+		margin: 7px 0 20px 20px;
+	}
+}
 
 
 /* ==========================================================================
