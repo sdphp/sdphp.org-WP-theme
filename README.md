@@ -1,16 +1,13 @@
-# [Roots Theme](http://roots.io/)
+# [SDPHP.org Worpdress Theme](http://sdphp.org/)
 
-Roots is a WordPress starter theme based on [HTML5 Boilerplate](http://html5boilerplate.com/) & [Bootstrap](http://getbootstrap.com/) that will help you make better themes.
+A Wordpress theme built for the SDPHP.org meetup group. It is built on the Roots starter theme, which is based on [HTML5 Boilerplate](http://html5boilerplate.com/) & [Bootstrap](http://getbootstrap.com/).
 
 * Source: [https://github.com/roots/roots](https://github.com/roots/roots)
 * Home Page: [http://roots.io/](http://roots.io/)
-* Twitter: [@retlehs](https://twitter.com/retlehs)
-* Newsletter: [Subscribe](http://roots.io/subscribe/)
-* Forum: [http://discourse.roots.io/](http://discourse.roots.io/)
 
 ## Installation
 
-Clone the git repo - `git clone git://github.com/roots/roots.git` - or [download it](https://github.com/roots/roots/zipball/master) and then rename the directory to the name of your theme or website. [Install Grunt](http://gruntjs.com/getting-started), and then install the dependencies for Roots contained in `package.json` by running the following from the Roots theme directory:
+Clone the git repo. Then install Grunt: [Install Grunt](http://gruntjs.com/getting-started), and then install the dependencies for Roots contained in `package.json` by running the following from the Roots theme directory:
 
 ```
 npm install
