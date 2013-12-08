@@ -12,6 +12,9 @@ body {
 	font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
 }
 
+textarea {
+	max-width: 100%;
+}
 
 
 /* ==========================================================================
@@ -55,6 +58,24 @@ body {
 		background: none;
 		border: none;
 		min-height: 0;
+		.navbar-nav {
+			> li {
+				@media ( min-width: @grid-float-breakpoint ) {
+					margin-right: 5px;
+				}
+			}
+			.dropdown {
+				li {
+					margin-bottom: 5px;
+					a {
+						.transition( 0.3s all );
+					}
+				}
+			}
+		}
+	}
+	.navbar-collapse {
+		border: 0;
 	}
 	.navbar-toggle {
 		margin-right: 5px;
@@ -66,7 +87,7 @@ body {
 		}
 	}
 	.widget_search {
-		margin: 28px 0 0 55%;
+		margin: 28px 0 0 65%;
 	}
 }
 
@@ -84,7 +105,11 @@ body {
    Primary Content
    ========================================================================== */
 
-.main { }
+.main {
+	@media ( min-width: @grid-float-breakpoint ) {
+//		border-right: 1px solid #eee;
+	}
+}
 
 /* Gallery Shortcode */
 .gallery-row { padding: 15px 0; }
@@ -98,12 +123,31 @@ body {
 .sidebar {
 	margin-top: 40px; // Top matches .page-header
 	padding: 0 20px 20px 20px;
-	border-left: 1px solid #eee;
 	@media ( min-width: @screen-sm ) {
 		padding-right: 0;
 	}
+	.widget {
+		margin-bottom: 20px;
+		h3 {
+			line-height: 1.6;
+			margin-bottom: 10px;
+			padding-bottom: 13px;
+			border-bottom: 1px solid #eee;
+		}
+	}
 	.widget_search {
 		.hidden-lg
+	}
+	ul {
+		list-style: none;
+		padding-left: 20px;
+		li {
+			padding: 10px 0;
+			border-top: 1px solid #eee;
+			&:first-child {
+				border-top: 0;
+			}
+		}
 	}
 }
 
@@ -113,7 +157,21 @@ body {
    Posts
    ========================================================================== */
 
-.hentry {}
+.hentry {
+	margin: 0 -15px;
+	padding: 10px 15px 40px;
+	&:nth-child(odd) {
+		background: #efefef;
+	}
+}
+
+.single {
+	.hentry {
+		margin: 0;
+		padding: 0;
+		background: none;
+	}
+}
 
 
 
@@ -121,7 +179,18 @@ body {
    Footer
    ========================================================================== */
 
-.content-info { }
+.content-info {
+	margin-top: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-top: 5px solid @brand-danger;
+	@media ( max-width: @screen-xs-max ) {
+		p {
+			float: none;
+			text-align: center;
+		}
+	}
+}
 
 
 
